@@ -84,11 +84,11 @@ Node C contains hash slots from 11001 to 16384.
 这时B1将成为主节点。
 如果B 和 B1 都失败，集群也是不可用的。
 ```
+
 - 一致性保证
- - Redis cluster 无法保证很可靠的一致性。读写都只请求主节点，当一条写请求在对应的主节点写成功后，会立刻返回给客户端成功，然后主节点通过异步的方式将新的数据同步到对应的从节点，这样的方式减少了客户端多个节点写成功等待的时间，不过在某些情况下会造成写丢失。
- -
+
+ Redis cluster 无法保证很可靠的一致性。读写都只请求主节点，当一条写请求在对应的主节点写成功后，会立刻返回给客户端成功，然后主节点通过异步的方式将新的数据同步到对应的从节点，这样的方式减少了客户端多个节点写成功等待的时间，不过在某些情况下会造成写丢失。
 例如当主节点B接受一条写请求，写入并返回给客户端成功后不幸宕掉，此时刚才的写还未同步给B对应的从节点B1，而从节点在发现主节点挂掉并重新选主后，新的主节点则永久丢失了之前老的主节点向用户确认的写。
- -
    还有另一种情况，当网络发生割裂，将集群分裂成少数派与多数派，这样在客户端不知情的情况下，会将写继续写入到少数派中的某些主节点中，而当割裂超过一定时长后，集群感知到异常，此时少数派中的所有主节点会停止响应所有的写请求，多数派的其对应的从节点则会发起选举成为新的主节点，假设过了一会后割裂恢复，老的主节点发现有更新的主存在，自动变成其从节点，而新的主节点中则会永久丢失掉网络割裂至集群感知异常进行切主这个阶段老主节点确认的所有写。
 
 Redis Cluster的更多特性可以参考官方文档：
@@ -132,15 +132,15 @@ GET x
 建议如果需要使用Redis Cluster，建议先在测试环境做大压力的模拟，然后用于非核心系统，如数据分析。
 
 ## 参考
-Redis cluster tutorial
-Redis cluster Specification
-http://redis.readthedocs.org/en/latest/topic/cluster-tutorial.html
-http://redis.io/commands/cluster-failover
-http://www.infoq.com/cn/news/2014/11/open-source-redis-cache?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk
-http://www.infoq.com/cn/articles/effective-ops-part-03#0-tsina-1-87074-397232819ff9a47a7b7e80a40613cfe1
-http://www.cnblogs.com/guoyinglin/p/4604279.html
-http://hot66hot.iteye.com/blog/2050676
-http://blog.csdn.net/myrainblues/article/details/25881535
-http://chuansong.me/n/1271889
-应用场景：http://os.51cto.com/art/201107/278292.htm
-http://database.51cto.com/art/201107/276333.htm
+[cluster-tutorial](http://redis.io/topics/cluster-tutorial)  
+[cluster-spec](http://redis.io/topics/cluster-spec)
+http://redis.readthedocs.org/en/latest/topic/cluster-tutorial.html  
+http://redis.io/commands/cluster-failover  
+http://www.infoq.com/cn/news/2014/11/open-source-redis-cache?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk  
+http://www.infoq.com/cn/articles/effective-ops-part-03#0-tsina-1-87074-397232819ff9a47a7b7e80a40613cfe1  
+http://www.cnblogs.com/guoyinglin/p/4604279.html  
+http://hot66hot.iteye.com/blog/2050676  
+http://blog.csdn.net/myrainblues/article/details/25881535  
+http://chuansong.me/n/1271889  
+应用场景：http://os.51cto.com/art/201107/278292.htm  
+http://database.51cto.com/art/201107/276333.htm  
