@@ -43,6 +43,7 @@
     1. [存储插件的注册](drill/docs/存储插件的注册.md)
 
 - **redis**
+ 1. [Redis Cluster调研](redis/Redis_Cluster调研.md)
  1. [Redis快速搭建](redis/Redis快速搭建.md)
  1. [Redis Cluster数据导入](redis/Redis Cluster 数据导入（pipe）.md)
 
