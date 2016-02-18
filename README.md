@@ -1,4 +1,4 @@
-# ** *good good study,day day up* **:+1:  
+# *good good study,day day up* :+1:  
 ## :point_right:study hard and make progress every day
 
 
