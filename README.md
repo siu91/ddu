@@ -4,6 +4,14 @@
 - **sqoop**
  1. [sqoop的安装与使用](sqoop/sqoop的安装与使用.md)
 
+- **mapreduce**
+ 1. [Map、reduce数设置](mapreduce/Map、reduce数设置.md)
+ 1.  [setInputPaths、listStatus和globStatus](mapreduce/setInputPaths、listStatus和globStatus.md)
+ 1. [GenericOptionsParser类](mapreduce/GenericOptionsParser类.md)
+ 1. [configuration易产生的误用](mapreduce/configuration易产生的误用.md)
+ 1.  [MapReduce两种常见的容错场景分析](mapreduce/MapReduce两种常见的容错场景分析.md)
+ 1.  [一些shell命令](mapreduce/一些shell命令.md)
+
 - **spark**
  1. [Spark 集群安装部署](spark/Spark 集群安装部署.md)
  1.  [Spark HA部署](spark/Spark HA部署.md)
