@@ -25,16 +25,18 @@
     1. [性能](drill/docs/Drill的性能.md)
     1. [连接到数据源](drill/docs/连接到数据源.md)
     1. [存储插件的注册](drill/docs/存储插件的注册.md)
- - **redis**
-1. [Redis快速搭建](redis/Redis快速搭建.md)
-1. [Redis Cluster数据导入](redis/Redis Cluster 数据导入（pipe）.md)
- - **maven**
-1. [Maven使用建议](maven/Maven使用建议.md)
- - **scala**
-1. [Scala学习笔记](scala/Scala学习笔记.md)
- - **shell**
-1. [使用getopt解析shell脚本的命令行选项](shell/使用getopt解析shell脚本的命令行选项.md)
- - **git**
+
+- **redis**
+ 1. [Redis快速搭建](redis/Redis快速搭建.md)
+ 1. [Redis Cluster数据导入](redis/Redis Cluster 数据导入（pipe）.md)
+
+- **maven**
+ 1. [Maven使用建议](maven/Maven使用建议.md)
+- **scala**
+ 1. [Scala学习笔记](scala/Scala学习笔记.md)
+- **shell**
+ 1. [使用getopt解析shell脚本的命令行选项](shell/使用getopt解析shell脚本的命令行选项.md)
+- **git**
   1. [分支最佳实践](doc/branch_of_best_practices.md)
   1. [开发者使用建议(仓库、分支)](doc/Suggestions-for-repository-branches-used-in-development.md)
   1. [`git-workflows`](doc/git-workflows-and-tutorials/)@author :point_right:[*oldratlee*](https://github.com/oldratlee)
