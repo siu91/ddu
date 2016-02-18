@@ -1,14 +1,15 @@
-# *bigdata*
-2016/2/15 上午10:47:47
+# ** *good good study,day day up* **:+1:  
+## :point_right:study hard and make progress every day
 
-## hive
------
-- [hive基础篇-DDL操作](hive/hive基础篇-DDL操作.md)
-- [hive基础篇-修改表结构](hive/hive基础篇-修改表结构.md)
-- [hive的内部表和外部表](hive/hive的内部表和外部表.md)
-- [hive数据导入](hive/hive数据导入.md)
-- [Hive如何执行文件中的sql语句](hive/Hive如何执行文件中的sql语句.md)
-- [hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
+
+- bigdata
+ - hive
+   1. [hive基础篇-DDL操作](hive/hive基础篇-DDL操作.md)
+   1. [hive基础篇-修改表结构](hive/hive基础篇-修改表结构.md)
+   1. [hive的内部表和外部表](hive/hive的内部表和外部表.md)
+   1. [hive数据导入](hive/hive数据导入.md)
+   1. [Hive如何执行文件中的sql语句](hive/Hive如何执行文件中的sql语句.md)
+   1. [hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
 
 ## Drill
 -----
