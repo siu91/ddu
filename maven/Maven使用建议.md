@@ -62,7 +62,9 @@ maven的本地仓库默认在`${user.home}/.m2/repository`，为了避免重装�
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
 				</configuration>
-			</plugin>```  
+			</plugin>
+```
+
 ### `maven-source-plugin` ###
 如果希望在构时，把source也加入本地库需添加source插件。
 ```xml
@@ -81,6 +83,7 @@ maven的本地仓库默认在`${user.home}/.m2/repository`，为了避免重装�
 				</executions>
 </plugin>
 ```  
+
 ## 关于maven 命令 ##
 ### `mvn install:install-file` ###
 将已有的jar包加入本地库。
