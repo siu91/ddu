@@ -45,3 +45,7 @@
     1. [`Gitflow`工作流](doc/git-workflows-and-tutorials/workflow-gitflow.md)  
     1. [`Forking`工作流](doc/git-workflows-and-tutorials/workflow-forking.md)  
     1. [`Pull Requests`](doc/git-workflows-and-tutorials/pull-request.md)  
+- **atom**
+   1. [解决atom-beautify无法格式化sql](atom/解决atom-beautify无法格式化sql.md)
+   1. [解决atom插件安装失败](atom/解决atom插件安装失败.md)
+   1. [atom必装插件](atom/atom必装插件.md)
