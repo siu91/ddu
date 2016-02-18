@@ -12,7 +12,7 @@
 1. [hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
 
  - Drill
-- Drill官网文档翻译
+  - Drill官网文档翻译
     1. [基本架构](drill/docs/Drill基本架构.md)
     1. [查询的执行](drill/docs/Drill查询的执行.md)
     1. [核心模块](drill/docs/Drill的核心模块.md)
