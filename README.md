@@ -1,5 +1,5 @@
 # *good good study,day day up* :+1:  
-:point_right:*study hard and make progress every* day
+猿生中一些学习记录，包括自己的平时markdown的和其他的一些好文收集。
 
 - **sqoop**
  1. [sqoop的安装与使用](sqoop/sqoop的安装与使用.md)
