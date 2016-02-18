@@ -17,13 +17,13 @@
  1.  [拓扑何时才会被主动kill](storm/拓扑何时才会被主动kill.md)
 
 
- - **hive**
-1. [hive基础篇-DDL操作](hive/hive基础篇-DDL操作.md)
-1. [hive基础篇-修改表结构](hive/hive基础篇-修改表结构.md)
-1. [hive的内部表和外部表](hive/hive的内部表和外部表.md)
-1. [hive数据导入](hive/hive数据导入.md)
-1. [Hive如何执行文件中的sql语句](hive/Hive如何执行文件中的sql语句.md)
-1. [hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
+- **hive**
+ 1. [hive基础篇-DDL操作](hive/hive基础篇-DDL操作.md)
+ 1.  [hive基础篇-修改表结构](hive/hive基础篇-修改表结构.m d)
+ 1.  [hive的内部表和外部表](hive/hive的内部表和外部表.md)
+ 1. [hive数据导入](hive/hive数据导入.md)
+ 1.  [Hive如何执行文件中的sql语句](hive/Hive如何执行文件中 的sql语句.md)
+ 1. [hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
 
 - **Drill**
   1. Drill官网文档翻译
