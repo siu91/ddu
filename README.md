@@ -11,9 +11,9 @@
 
 - **storm**
  1. [启停storm后台进程](storm/启停storm后台进程.md)
- 1.  [storm配置和服务器配置的关系](storm/storm配置和服务器 配置的关系.md)
+ 1.  [storm配置和服务器配置的关系](storm/storm配置和服务器配置的关系.md)
  1. [storm的序列化](storm/storm的序列化.md)
- 1. [storm 调优](storm/storm  调优（Topology的性能瓶颈）.md)
+ 1. [storm 调优](storm/storm调优（Topology的性能瓶颈）.md)
  1.  [拓扑何时才会被主动kill](storm/拓扑何时才会被主动kill.md)
 
 
