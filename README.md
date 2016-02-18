@@ -1,12 +1,20 @@
 # *good good study,day day up* :+1:  
 ## :point_right:study hard and make progress every day
 
- - **storm**
-1. [启停storm后台进程](storm/启停storm后台进程.md)
-1. [storm配置和服务器配置的关系](storm/storm配置和服务器配置的关系.md)
-1. [storm的序列化](storm/storm的序列化.md)
-1. [storm 调优](storm/storm 调优（Topology的性能瓶颈）.md)
-1. [拓扑何时才会被主动kill](storm/拓扑何时才会被主动kill.md)
+- **sqoop**
+ 1. [sqoop的安装与使用](sqoop/sqoop的安装与使用.md)
+
+- **spark**
+ 1. [Spark 集群安装部署](spark/Spark 集群安装部署.md)
+ 1.  [Spark HA部署](spark/Spark HA部署.md)
+ 1. [（记）将Spark Applications提交到YARN](spark/（记）将Spark Applications提交到YARN.md)
+
+- **storm**
+ 1. [启停storm后台进程](storm/启停storm后台进程.md)
+ 1.  [storm配置和服务器配置的关系](storm/storm配置和服务器 配置的关系.md)
+ 1. [storm的序列化](storm/storm的序列化.md)
+ 1. [storm 调优](storm/storm  调优（Topology的性能瓶颈）.md)
+ 1.  [拓扑何时才会被主动kill](storm/拓扑何时才会被主动kill.md)
 
 
  - **hive**
