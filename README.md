@@ -45,14 +45,14 @@
 - **shell**
  1. [使用getopt解析shell脚本的命令行选项](shell/使用getopt解析shell脚本的命令行选项.md)
 - **git**
-  1. [分支最佳实践](doc/branch_of_best_practices.md)
-  1. [开发者使用建议(仓库、分支)](doc/Suggestions-for-repository-branches-used-in-development.md)
-  1. [`git-workflows`](doc/git-workflows-and-tutorials/)@author :point_right:[*oldratlee*](https://github.com/oldratlee)
-    1. [集中式工作流](doc/git-workflows-and-tutorials/workflow-centralized.md)  
-    1. [功能分支工作流](doc/git-workflows-and-tutorials/workflow-feature-branch.md)  
-    1. [`Gitflow`工作流](doc/git-workflows-and-tutorials/workflow-gitflow.md)  
-    1. [`Forking`工作流](doc/git-workflows-and-tutorials/workflow-forking.md)  
-    1. [`Pull Requests`](doc/git-workflows-and-tutorials/pull-request.md)  
+  1. [分支最佳实践](git/doc/branch_of_best_practices.md)
+  1. [开发者使用建议(仓库、分支)](git/doc/Suggestions-for-repository-branches-used-in-development.md)
+  1. [`git-workflows`](git/doc/git-workflows-and-tutorials/)@author :point_right:[*oldratlee*](https://github.com/oldratlee)
+    1. [集中式工作流](git/doc/git-workflows-and-tutorials/workflow-centralized.md)  
+    1. [功能分支工作流](git/doc/git-workflows-and-tutorials/workflow-feature-branch.md)  
+    1. [`Gitflow`工作流](git/doc/git-workflows-and-tutorials/workflow-gitflow.md)  
+    1. [`Forking`工作流](git/doc/git-workflows-and-tutorials/workflow-forking.md)  
+    1. [`Pull Requests`](git/doc/git-workflows-and-tutorials/pull-request.md)  
 - **atom**
    1. [解决atom-beautify无法格式化sql](atom/解决atom-beautify无法格式化sql.md)
    1. [解决atom插件安装失败](atom/解决atom插件安装失败.md)
