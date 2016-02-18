@@ -1,5 +1,5 @@
 # *good good study,day day up* :+1:  
-## :point_right:study hard and make progress every day
+:point_right:study hard and make progress every day
 
 - **sqoop**
  1. [sqoop的安装与使用](sqoop/sqoop的安装与使用.md)
