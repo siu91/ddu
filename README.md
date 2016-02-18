@@ -1,8 +1,6 @@
 # *good good study,day day up* :+1:  
 ## :point_right:study hard and make progress every day
 
-
-### bigdata
  - hive
 1. [hive基础篇-DDL操作](hive/hive基础篇-DDL操作.md)
 1. [hive基础篇-修改表结构](hive/hive基础篇-修改表结构.md)
@@ -19,3 +17,6 @@
     1. [性能](drill/docs/Drill的性能.md)
     1. [连接到数据源](drill/docs/连接到数据源.md)
     1. [存储插件的注册](drill/docs/存储插件的注册.md)
+ - redis
+1. [Redis快速搭建](redis/Redis快速搭建.md)
+1. [Redis Cluster数据导入](redis/Redis Cluster 数据导入（pipe）.md)
