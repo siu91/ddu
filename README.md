@@ -37,7 +37,7 @@
  1. [:pushpin:hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
 
 - **Drill**
-  1. :pushpin:Drill官网文档翻译
+  1. :pushpin:[Drill官网文档翻译](drill/docs)
     1. [基本架构](drill/docs/Drill基本架构.md)
     1. [查询的执行](drill/docs/Drill查询的执行.md)
     1. [核心模块](drill/docs/Drill的核心模块.md)
@@ -57,7 +57,7 @@
 - **shell**
  1. [:pencil:使用getopt解析shell脚本的命令行选项](shell/使用getopt解析shell脚本的命令行选项.md)
 - **git**
-  1. [分支最佳实践](git/doc/branch_of_best_practices.md)
+  1. [:pushpin:分支最佳实践](git/doc/branch_of_best_practices.md)
   1. [:pencil:开发者使用建议(仓库、分支)](git/doc/Suggestions-for-repository-branches-used-in-development.md)
   1. [:pencil:记rebase使用](git/记rebase使用.md)
   1. [:pushpin:`git-workflows`](git/doc/git-workflows-and-tutorials/)@author :point_right:[*oldratlee*](https://github.com/oldratlee)
