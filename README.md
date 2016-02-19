@@ -5,6 +5,8 @@
  1. [sqoop的安装与使用](sqoop/sqoop的安装与使用.md)
 - **flume**
   1. [flume入文件到hdfs配置](flume/file-to-hdfs-conf.md)
+- **kafka**
+    1. [记kafka log4j日志迁移](kafka/记kafka-log4j日志迁移.md)
 - **mapreduce**
  1. [Map、reduce数设置](mapreduce/Map、reduce数设置.md)
  1.  [setInputPaths、listStatus和globStatus](mapreduce/setInputPaths、listStatus和globStatus.md)
