@@ -1,4 +1,4 @@
-# *good good study,day day up* 
+# *good good study,day day up*
 猿生中一些学习记录，包括自己的平时markdown的和其他的一些好文收集。
 
 - **sqoop**
@@ -66,5 +66,5 @@
    1. [解决atom-beautify无法格式化sql](atom/解决atom-beautify无法格式化sql.md)
    1. [解决atom插件安装失败](atom/解决atom插件安装失败.md)
    1. [atom必装插件](atom/atom必装插件.md)
-- ** *priski* (实践为王 *Practice is king* :+1: )**
+- ** *priski* (实践为王 *Practice is king* :+1: ) **
  - [使用延时队列DelayQueue和Redis处理日志中的延时事件](priski/使用延时队列DelayQueue和Redis处理日志中的延时事件.md)
