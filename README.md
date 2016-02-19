@@ -71,4 +71,4 @@
    1. [:pencil:解决atom插件安装失败](atom/解决atom插件安装失败.md)
    1. [:pencil:atom必装插件](atom/atom必装插件.md)
 - **priski (实践为王 *Practice is king*)** :+1:
- - [:pencil:使用延时队列DelayQueue和Redis处理日志中的延时事件](priski/使用延时队列DelayQueue和Redis处理日志中的延时事件.md)
+ 1. [:pencil:使用延时队列DelayQueue和Redis处理日志中的延时事件](priski/使用延时队列DelayQueue和Redis处理日志中的延时事件.md)
