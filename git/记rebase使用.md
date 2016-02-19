@@ -30,7 +30,6 @@ $ git rebase origin
 
 现在我们可以看一下用合并(merge)和用rebase所产生的历史的区别：
 ![pic](src/img/rebase5.png)
-![pic](src/img/rebase5(1).png)
 在rebase的过程中，也许会出现冲突(conflict). 在这种情况，Git会停止rebase并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:
 
 $ git rebase --continue
