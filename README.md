@@ -7,6 +7,7 @@
   1. [:pencil:flume入文件到hdfs配置](flume/file-to-hdfs-conf.md)
 - **kafka**
     1. [:pencil:记kafka log4j日志迁移](kafka/记kafka-log4j日志迁移.md)
+    1. [:pencil:kafka shell 用例](kafka/kafka-shell.md)
 - **mapreduce**
  1. [:pushpin:Map、reduce数设置](mapreduce/Map、reduce数设置.md)
  1.  [:pushpin:setInputPaths、listStatus和globStatus](mapreduce/setInputPaths、listStatus和globStatus.md)
