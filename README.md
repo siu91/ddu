@@ -47,11 +47,15 @@
     1. [连接到数据源](drill/docs/连接到数据源.md)
     1. [存储插件的注册](drill/docs/存储插件的注册.md)
 
+- **dm(*data mining*)**
 - **redis**
  1. [:pencil:Redis Cluster调研](redis/Redis_Cluster调研.md)
  1. [:pencil:Redis快速搭建](redis/Redis快速搭建.md)
  1. [:pencil:Redis Cluster数据导入](redis/Redis Cluster 数据导入（pipe）.md)
 
+- **oracle**
+ 1. [:pencil:parallel使用](oracle/parallel-use.md)
+ 1. [:pushpin:ORA-00060:数据表死锁](oracle/ORA-00060_数据表死锁.md)
 - **maven**
  1. [:pencil:Maven使用建议](maven/Maven使用建议.md)
 - **scala**
