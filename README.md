@@ -78,3 +78,9 @@
    1. [:pencil:atom必装插件](atom/atom必装插件.md)
 - **priski (实践为王 *Practice is king*)** :+1:
  1. [:pencil:使用延时队列DelayQueue和Redis处理日志中的延时事件](priski/使用延时队列DelayQueue和Redis处理日志中的延时事件.md)
+- **java**
+   1. [:pushpin:Java动态代理、cglib动态代理](java/Java动态代理、cglib动态代理.md)
+- **articles**
+   1. [:pushpin:使用开源项目的正确姿势](article/使用开源项目的正确姿势.md)
+- **architecture**
+   1. [:pushpin:数据处理平台架构中的SMACK组合](architecture/数据处理平台架构中的SMACK组合.md)
