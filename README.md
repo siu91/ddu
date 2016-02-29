@@ -29,10 +29,10 @@
    1. [:pencil:开发者使用建议(仓库、分支)](git/doc/Suggestions-for-repository-branches-used-in-development.md)
    1. [:pencil:记rebase使用](git/记rebase使用.md)
    1. [:pushpin:`git-workflows`](git/doc/git-workflows-and-tutorials/)@author :point_right:[*oldratlee*](https://github.com/oldratlee)
-    1. [集中式工作流](git/doc/git-workflows-and-tutorials/workflow-centralized.md)  
-    1. [功能分支工作流](git/doc/git-workflows-and-tutorials/workflow-feature-branch.md)  
-    1. [`Gitflow`工作流](git/doc/git-workflows-and-tutorials/workflow-gitflow.md)  
-    1. [`Forking`工作流](git/doc/git-workflows-and-tutorials/workflow-forking.md)  
+    1. [集中式工作流](git/doc/git-workflows-and-tutorials/workflow-centralized.md)
+    1. [功能分支工作流](git/doc/git-workflows-and-tutorials/workflow-feature-branch.md)
+    1. [`Gitflow`工作流](git/doc/git-workflows-and-tutorials/workflow-gitflow.md)
+    1. [`Forking`工作流](git/doc/git-workflows-and-tutorials/workflow-forking.md)
     1. [`Pull Requests`](git/doc/git-workflows-and-tutorials/pull-request.md)
 - **hive**
    1. [:pushpin:hive基础篇-DDL操作](hive/hive基础篇-DDL操作.md)
@@ -67,6 +67,7 @@
    1. [:pencil:Redis快速搭建](redis/Redis快速搭建.md)
    1. [:pencil:Redis Cluster数据导入](redis/Redis Cluster 数据导入（pipe）.md)
    1. [:pencil:Redis持久化：AOF与RDB](redis/redis-RDB-AOF.md)
+   1. [:pencil:Redis INFO 命令详解](redis/redis-info-command.md)
 - **scala**
    1. [:pencil:Scala学习笔记](scala/Scala学习笔记.md)
 - **shell**
