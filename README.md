@@ -4,6 +4,7 @@
 - **architecture**
    1. [:pushpin:数据处理平台架构中的SMACK组合](architecture/数据处理平台架构中的SMACK组合.md)
 - **articles**
+   1. [:pushpin:别学框架学架构](article/别学框架学架构.md)
    1. [:pushpin:使用开源项目的正确姿势](article/使用开源项目的正确姿势.md)
 - **atom**
    1. [:pencil:解决atom-beautify无法格式化sql](atom/解决atom-beautify无法格式化sql.md)
@@ -41,6 +42,7 @@
    1.  [:pushpin:Hive如何执行文件中的sql语句](hive/Hive如何执行文件中 的sql语句.md)
    1. [:pushpin:hive中join、semi join、outer join举例详解](hive/hive中join、semi join、outer join举例详解.md)
 - **java**
+   1. [:pushpin:单例与序列化](java/单例与序列化.md)
    1. [:pushpin:Java动态代理、cglib动态代理](java/Java动态代理、cglib动态代理.md)
 - **kafka**
    1. [:pencil:记kafka log4j日志迁移](kafka/记kafka-log4j日志迁移.md)
