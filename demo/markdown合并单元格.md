@@ -12,7 +12,7 @@
 
 
 
-|      null  |            merge        ||
+  |         |           merge          ||
   title1    |   title2    |   title3    |
   ------    |   :------:  |   ------:   |
   cell1     |        merge-cells       ||
