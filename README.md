@@ -24,6 +24,8 @@
     1. [存储插件的注册](drill/docs/存储插件的注册.md)
 - **flume**
    1. [:pencil:flume入文件到hdfs配置](flume/file-to-hdfs-conf.md)
+- **gbase**
+   1. [:pencil:从gbase表中导出文件](gbase/gbase-file-out.md)
 - **git**
    1. [:pushpin:分支最佳实践](git/doc/branch_of_best_practices.md)
    1. [:pencil:开发者使用建议(仓库、分支)](git/doc/Suggestions-for-repository-branches-used-in-development.md)
