@@ -59,6 +59,9 @@
    1.  [:pencil:一些shell命令](mapreduce/一些shell命令.md)
 - **maven**
    1. [:pencil:Maven使用建议](maven/Maven使用建议.md)
+   1. [:pencil:搭建Maven私服](maven/搭建Maven私服.md)
+- **mysql**
+   1. [:pencil:分组取top1](mysql/分组取top1.md)
 - **oracle**
    1. [:pencil:parallel使用](oracle/parallel-use.md)
    1. [:pushpin:ORA-00060:数据表死锁](oracle/ORA-00060_数据表死锁.md)
