@@ -67,6 +67,8 @@
    1. [:pushpin:ORA-00060:数据表死锁](oracle/ORA-00060_数据表死锁.md)
 - **priski (实践为王 *Practice is king*)** :+1:
    1. [:pencil:使用延时队列DelayQueue和Redis处理日志中的延时事件](priski/使用延时队列DelayQueue和Redis处理日志中的延时事件.md)
+- **python**
+   1. [:pencil:learn python hard way](python/learn-python-hard-way)
 - **redis**
    1. [:pencil:Redis Cluster调研](redis/Redis_Cluster调研.md)
    1. [:pencil:Redis快速搭建](redis/Redis快速搭建.md)
