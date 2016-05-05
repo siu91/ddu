@@ -1,3 +1,6 @@
+如果你不想看下面的记住这一句就可以：
+```git rebase用于把一个分支的修改合并到当前分支。```
+
 假设你现在基于远程分支"origin"，创建一个叫"mywork"的分支。
 ```
 $ git checkout -b mywork origin
