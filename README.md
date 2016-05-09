@@ -10,6 +10,10 @@
    1. [:pencil:解决atom-beautify无法格式化sql](atom/解决atom-beautify无法格式化sql.md)
    1. [:pencil:解决atom插件安装失败](atom/解决atom插件安装失败.md)
    1. [:pencil:atom必装插件](atom/atom必装插件.md)
+- **cassandra**
+   1. [:pencil:cql语法实践](cassandra/cql语法实践.md)
+   1. [:pencil:多语言连接示例](cassandra/cassandra-client-demo.md)
+   1. [:pencil:命令速查](cassandra/command.md)
 - **demo**
    1. [markdown表格用例](demo/markdown表格用例.md)
    1. [TODO用例](demo/TODO-2016-02-02.md)
