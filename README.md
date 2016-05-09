@@ -30,6 +30,8 @@
    1. [:pushpin:分支最佳实践](git/doc/branch_of_best_practices.md)
    1. [:pencil:开发者使用建议(仓库、分支)](git/doc/Suggestions-for-repository-branches-used-in-development.md)
    1. [:pencil:记rebase使用](git/记rebase使用.md)
+   1. [:pencil:git fecth还是git pull](git/git-fetch和git-pull的区别.md)
+   1. [:pencil:git fetch最佳实践指引](git/git-fetch最佳实践指引.md)
    1. [:pushpin:`git-workflows`](git/doc/git-workflows-and-tutorials/)@author :point_right:[*oldratlee*](https://github.com/oldratlee)
     1. [集中式工作流](git/doc/git-workflows-and-tutorials/workflow-centralized.md)
     1. [功能分支工作流](git/doc/git-workflows-and-tutorials/workflow-feature-branch.md)
