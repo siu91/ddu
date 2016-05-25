@@ -86,7 +86,7 @@ to answer the following query.
 ```
 ```
 首先,定义了两个属性键'name'和'age'。
-接下来,一个简单composite index 在刚才设置的'name'上。
+接下来,一个简单composite index 建立在刚才设置的'name'上。
 Titan将使用这个索引来处理下列查询。
 ```
 ```shell
