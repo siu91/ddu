@@ -71,7 +71,8 @@ elements. Until the reindex procedure has completed, the index will not be avail
 It is encouraged to define graph indexes in the same transaction as the initial schema.
 ```
 ```
-两种类型的索引创建通过Titan管理系统和返回的索引生成器TitanManagement.buildIndex(字符串,类)的第一个参数定义了索引的名称,第二个参数指定了类型的元素索引(例如Vertex.class)。
+两种类型的索引创建通过Titan管理系统和返回的索引生成器TitanManagement.buildIndex(String,Class)
+的第一个参数定义了索引的名称,第二个参数指定了类型的元素索引(例如Vertex.class)。
 图索引的名称必须是唯一的。
 图索引建立对新定义的属性键,即相同的管理事务中定义的属性键索引,是立即可用。
 ```
@@ -93,7 +94,8 @@ mgmt.buildIndex('byNameAndAge',Vertex.class).addKey(name).addKey(age).buildCompo
 mgmt.commit()
 ```
 ```
-First, two property keys name and age are defined. Next, a simple composite index on just the name property key is built.
+First, two property keys name and age are defined. Next,
+a simple composite index on just the name property key is built.
 Titan will use this index to answer the following query.
 ```
 ```
