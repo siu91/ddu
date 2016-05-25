@@ -46,7 +46,7 @@ to equality lookups for a particular, previously-defined combination of property
 of indexed keys and support multiple condition predicates in addition to equality depending on the backing index store.
 ```
 ```
-Titan区分两种类型的图索引:组合和混合索引。
+Titan区分两种类型的图索引:Composite Index(复合索引)和Mixed Index(混合索引)。
 复合索引是非常快和有效,但有限制只能查找已经定义属性的组合键，中等值查找。
 混合索引可以用来查找任何索引键的组合,支持多个条件谓词,除了平等取决于索引存储的支持。
 ```
