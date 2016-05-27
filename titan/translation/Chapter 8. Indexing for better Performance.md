@@ -232,6 +232,52 @@ Unlike composite indexes, mixed indexes do not support uniqueness.
 混合索引支持全文搜索,搜索范围,地理搜索等等
 与复合索引不同，混合索引不支持唯一性索引。
 ```
+####　Adding Property Keys
+```
+Property keys can be added to an existing mixed index
+which allows subsequent queries to include this key in the query condition.
+```
+```
+属性键可以添加到现有的混合索引，随后的查询可以查询中包括这个关键条件。
+```
+```shell
+mgmt = g.getManagementSystem()
+location = mgmt.makePropertyKey('location').dataType(Geoshape.class).make()
+nameAndAge = mgmt.getGraphIndex('nameAndAge')
+mgmt.addIndexKey(nameAndAge,location)
+mgmt.commit()
+```
+
+## Vertex-centric Index(顶点中心索引)
+
+```
+Vertex-centric indexes are local index structures built individually per vertex.
+In large graphs vertices can have thousands of incident edges.
+Traversing through those vertices can be very slow
+because a large subset of the incident edges
+has to be retrieved and then filtered in memory to match the conditions of the traversal.
+Vertex-centric indexes can speed up such traversals
+by using localized index structures
+to retrieve only those edges that need to be traversed.
+```
+```
+Vertex-centric Index 是本地索引结构分别建立在每顶点。
+在大型图形顶点可以有成千上万的事件边。
+遍历这些顶点可以非常缓慢,因为一个大的子集事件边缘必须在内存中,然后过滤检索匹配条件的遍历。
+Vertex-centric Index 可以加快这样遍历使用局部索引结构只检索那些需要遍历的边缘。
+```
+
+```
+Suppose that Hercules battled hundreds of monsters
+in addition to the three captured in the introductory Graph of the Gods.
+Without a vertex-centric index, a query asking for
+those monsters battled between time point 10 and 20
+would require retrieving all battled edges
+even though there are only a handful of matching edges.
+```
+```
+假设大力神与数以百计的怪物除了三神的介绍图中捕获。没有vertex-centric索引,查询要求那些怪物与时间点10至20需要检索所有与边即使只有一小部分匹配的边缘。
+```
 
 `未完成，待更新。。。`
 
