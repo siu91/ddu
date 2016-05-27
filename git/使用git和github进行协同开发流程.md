@@ -2,7 +2,7 @@
 
 ---------------------------------
 ## 在`GitHub`上新建一个`repository`，初始化创建两个永久分支：`master`、`develop`
-![图](src\img\create_master_develop_branch.png)
+![图](/src/img/reate_master_develop_branch.png)
 ## 在本地clone仓库并checkout到develop分支
 ```bash
 $ git clone git@github.com:gongice/git-demo.git
@@ -60,4 +60,4 @@ $ git branch -d feature-discuss
 ```bash
 $ git push origin develop
 ```
-![图](src\img\finish_feature-discuss.png)
+![图](/src/img/finish_feature-discuss.png)
