@@ -119,7 +119,13 @@ The recommended way to generate and run a reindex job on MapReduce is through th
 - Call updateIndex(<index>, SchemaAction.REINDEX) on the MapReduceIndexManagement instance
 - If the index has not yet been enabled, enable it through TitanManagement
 
-This class implements an updateIndex method that supports only the REINDEX and REMOVE_INDEX actions for its SchemaAction parameter. The class starts a Hadoop MapReduce job using the Hadoop configuration and jars on the classpath. Both Hadoop 1 and 2 are supported. This class gets metadata about the index and storage backend (e.g. the Cassandra partitioner) from the TitanGraph instance given to its constructor.
+This class implements an updateIndex method that supports only
+the REINDEX and REMOVE_INDEX actions for its SchemaAction parameter.
+The class starts a Hadoop MapReduce job using the Hadoop configuration
+and jars on the classpath. Both Hadoop 1 and 2 are supported.
+This class gets metadata about the index and storage backend
+(e.g. the Cassandra partitioner) from the TitanGraph
+instance given to its constructor.
 ```
 ```
 在MapReduce上创建并执行重建索引工作，推荐用MapReduceIndexManagement类。 下面是一个大概的步骤：
@@ -144,7 +150,10 @@ mgmt.commit()
 #### 28.1.4.1. Reindex Example on MapReduce (MapReduce重建索引的例子)
 
 ```
-The following Gremlin snippet outlines all steps of the MapReduce reindex process in one self-contained example using minimal dummy data against the Cassandra storage backend.
+The following Gremlin snippet outlines all steps of
+the MapReduce reindex process in one self-contained
+example using minimal dummy data against the
+Cassandra storage backend.
 ```
 ```
 以下是一个自带的Gremlin 脚本示例，用少量的样例数据和Cassandra为存储后端，列出了MapReduce重建索引的所有步骤
@@ -331,3 +340,45 @@ Titan不提供一个自动化的机制,从其索引后端删除索引。
 ```
 
 ###28.2.2. Preparing for Index Removal (准备删除索引)
+
+```
+If the index is currently enabled, it should first be disabled.
+This is done through the ManagementSystem.
+```
+```
+如果该索引当前是启用,它应该首先被禁用。
+这是通过ManagementSystem。
+```
+```shell
+mgmt = graph.openManagement()
+rindex = mgmt.getRelationIndex(mgmt.getRelationType("battled"), "battlesByTime")
+mgmt.updateIndex(rindex, SchemaAction.DISABLE_INDEX).get()
+gindex = mgmt.getGraphIndex("byName")
+mgmt.updateIndex(gindex, SchemaAction.DISABLE_INDEX).get()
+mgmt.commit()
+```
+```
+Once the status of all keys on the index changes to DISABLED,
+the index is ready to be removed.
+A utility in ManagementSystem can automate the wait-for-DISABLED step:
+```
+```
+一旦所有索引上的键都DISABLED，这个索引已经准备好被删除了。
+在ManagementSystem中有一个工具可以自动wait-for-DISABLED:
+```
+```shell
+ManagementSystem.awaitGraphIndexStatus(graph, 'byName').status(SchemaStatus.DISABLED).call()
+```
+```
+After a composite index is DISABLED, there is a choice between two execution frameworks for its removal:
+
+- MapReduce
+- TitanManagement
+Index removal on MapReduce supports large, horizontally-distributed databases. Inedx removal on TitanManagement spawns a single-machine OLAP job. This is intended for convenience and speed on those databases small enough to be handled by one machine.
+
+Index removal requires:
+
+- The index name (a string — the user provides this to Titan when building a new index)
+- The index type (a string — the name of the edge label or property key on which the vertex-centric index is built). This applies only to vertex-centric indexes - leave blank for global graph indexes.
+As noted in the overview, a mixed index must be manually dropped from the indexing backend. Neither the MapReduce framework nor the TitanManagement framework will delete a mixed backend from the indexing backend.
+```
