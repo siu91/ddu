@@ -4,7 +4,7 @@
  - [28.1.1. Overview (概述)](#28.1.1.)
  - [28.1.2. Prior to Reindex (重建索引之前)](#28.1.2.)
  - [28.1.3. Preparing to Reindex (准备重建索引)](#28.1.3.)
- - [28.1.4. Executing a Reindex Job on MapReduce (MapReduce重建索引)](# 28.1.4.)
+ - [28.1.4. Executing a Reindex Job on MapReduce (MapReduce重建索引)](#28141-reindex-example-on-mapreduce-mapreduce重建索引的例子)
  - [28.1.5. Executing a Reindex job on TitanManagement(TitanManagement重建索引)](#28.1.5.TitanManagement重建索引)
 - 28.2. Index Removal
  - 28.2.1. Overview (概述)
@@ -236,7 +236,7 @@ graph = TitanFactory.open("conf/titan-cassandra-es.properties")
 g.V().has("desc", containsText("baz"))
 ```
 
-### 28.1.5.TitanManagement重建索引
+### 28.1.5. Executing a Reindex job on TitanManagement(TitanManagement重建索引)
 
 ```
 To run a reindex job on TitanManagement, invoke TitanManagement.
