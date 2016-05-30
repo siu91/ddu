@@ -1,8 +1,8 @@
 # Table of Contents (目录)
 
-- 20.1. Full-Text Search
-- 20.1.1. Full-Text Search
-- 20.1.2. String Search
+- [20.1. Full-Text Search](#201-full-text-search-全文搜索)
+- [20.1.1. Full-Text Search](#2011-full-text-search-全文搜索)
+- [20.1.2. String Search](#2012-string-search-字符搜索)
 - 20.1.3. Full text and string search
 - 20.2. Field Mapping
 - 20.2.1. Individual Field Mapping
@@ -48,6 +48,8 @@ which can lead to minor differences in how full-text search queries are handled
 字符搜索串谓词(见下文)可以在查询中使用,但这些需要过滤在内存中，开销很大。
 
 ### 20.1.2. String Search (字符搜索)
+
+### 20.1.3. Full text and string search
 
 如果使用的是ElasticSearch，索引属性可以使用文本和字符串的所有谓词来精确和模糊匹配。
 
