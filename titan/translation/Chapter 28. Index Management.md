@@ -1,3 +1,24 @@
+# Table of Contents (目录)
+
+- [28.1. Reindexing (重建索引)](## 28.1.)
+ - [28.1.1. Overview (概述)](### 28.1.1.)
+ - 28.1.2. Prior to Reindex
+ - 28.1.3. Preparing to Reindex
+ - 28.1.4. Executing a Reindex Job on MapReduce
+ - 28.1.5. Executing a Reindex job on TitanManagement
+- 28.2. Index Removal
+ - 28.2.1. Overview (概述)
+ - 28.2.2. Preparing for Index Removal
+ - 28.2.3. Executing an Index Removal Job on MapReduce
+ - 28.2.4. Executing an Index Removal job on TitanManagement
+- 28.3. Common Problems with Index Management
+ - 28.3.1. IllegalArgumentException when starting job
+ - 28.3.2. Could not find index
+ - 28.3.3. Cassandra Mappers Fail with "Too many open files"
+
+
+
+
 ## 28.1. Reindexing (重建索引)
 ```
 Section 8.1, “Graph Index” and Section 8.2,
@@ -94,13 +115,14 @@ small enough to be handled by one machine.
 
 Reindexing requires:
 - The index name (a string — the user provides this to Titan when building a new index)
-- The index type (a string — the name of the edge label or property key on which the vertex-centric index is built). This applies only to vertex-centric indexes - leave blank for global graph indexes.
+- The index type (a string — the name of the edge label or property key on which the vertex-centric index is built).
+This applies only to vertex-centric indexes - leave blank for global graph indexes.
 ```
 ```
 对于重建索引工作有两个执行框架供选择:
 - MapReduce
 - TitanManagement
-MapReduce支持大型重建索引,horizontally-distributed数据库。
+MapReduce支持大型重建索引,horizontally-distributed(水平分布)数据库。
 TitanManagement重建索引以单机OLAP的方式，这样很便捷，只要数据能在单机中放得下。
 
 重建索引需要:
@@ -339,7 +361,7 @@ Titan不提供一个自动化的机制,从其索引后端删除索引。
 索引移除会删除所有与之有关的，除了它的schema定义和它的DISABLED状态。
 ```
 
-###28.2.2. Preparing for Index Removal (准备删除索引)
+### 28.2.2. Preparing for Index Removal (准备删除索引)
 
 ```
 If the index is currently enabled, it should first be disabled.
@@ -357,7 +379,7 @@ gindex = mgmt.getGraphIndex("byName")
 mgmt.updateIndex(gindex, SchemaAction.DISABLE_INDEX).get()
 mgmt.commit()
 ```
-```
+```·
 Once the status of all keys on the index changes to DISABLED,
 the index is ready to be removed.
 A utility in ManagementSystem can automate the wait-for-DISABLED step:
@@ -374,11 +396,32 @@ After a composite index is DISABLED, there is a choice between two execution fra
 
 - MapReduce
 - TitanManagement
-Index removal on MapReduce supports large, horizontally-distributed databases. Inedx removal on TitanManagement spawns a single-machine OLAP job. This is intended for convenience and speed on those databases small enough to be handled by one machine.
+Index removal on MapReduce supports large, horizontally-distributed databases.
+Inedx removal on TitanManagement spawns a single-machine OLAP job.
+This is intended for convenience and speed on those databases small enough
+to be handled by one machine.
 
 Index removal requires:
 
 - The index name (a string — the user provides this to Titan when building a new index)
-- The index type (a string — the name of the edge label or property key on which the vertex-centric index is built). This applies only to vertex-centric indexes - leave blank for global graph indexes.
-As noted in the overview, a mixed index must be manually dropped from the indexing backend. Neither the MapReduce framework nor the TitanManagement framework will delete a mixed backend from the indexing backend.
+- The index type (a string — the name of the edge label or property key on which the vertex-centric index is built).
+This applies only to vertex-centric indexes - leave blank for global graph indexes.
+
+As noted in the overview, a mixed index must be manually dropped from the indexing backend.
+Neither the MapReduce framework nor the TitanManagement framework will delete a mixed
+backend from the indexing backend.
+```
+```
+复合索引DISABLED(禁用)后,有两种方法移除索引:
+- MapReduce
+- TitanManagement
+MapReduce支持大型重建索引,horizontally-distributed(水平分布)数据库。
+TitanManagement重建索引以单机OLAP的方式，这样很便捷，只要数据能在单机中放得下。
+
+索引删除要求:
+- 索引名称(字符串-用户提供了这种泰坦在构建一个新的索引)
+- 索引类型(字符串-边的标签名或属性键(vertex-centric索引建立的))。
+  这只适用于vertex-centric，对于全局图索引这项留空
+如上所概述的,混合索引必须手动从后端索引删除。
+无论是MapReduce还是TitanManagement都会从索引后端删除混合后端。
 ```
