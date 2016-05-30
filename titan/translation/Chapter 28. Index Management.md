@@ -1,11 +1,11 @@
 # Table of Contents (目录)
 
-- [28.1. Reindexing (重建索引)](#28.1.)
- - [28.1.1. Overview (概述)](#28.1.1.)
- - [28.1.2. Prior to Reindex (重建索引之前)](#28.1.2.)
- - [28.1.3. Preparing to Reindex (准备重建索引)](#28.1.3.)
+- [28.1. Reindexing (重建索引)](#281-reindexing-重建索引)
+ - [28.1.1. Overview (概述)](#2811-overview-概述)
+ - [28.1.2. Prior to Reindex (重建索引之前)](#2812-prior-to-reindex-重建索引之前)
+ - [28.1.3. Preparing to Reindex (准备重建索引)](#2813-preparing-to-reindex-准备重建索引)
  - [28.1.4. Executing a Reindex Job on MapReduce (MapReduce重建索引)](#2814-executing-a-reindex-job-on-mapreduce-mapreduce重建索引)
- - [28.1.5. Executing a Reindex job on TitanManagement(TitanManagement重建索引)](#28.1.5.TitanManagement重建索引)
+ - [28.1.5. Executing a Reindex job on TitanManagement(TitanManagement重建索引)](#2815-executing-a-reindex-job-on-titanmanagementtitanmanagement重建索引)
 - 28.2. Index Removal
  - 28.2.1. Overview (概述)
  - 28.2.2. Preparing for Index Removal
