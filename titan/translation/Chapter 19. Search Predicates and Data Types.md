@@ -126,7 +126,7 @@ GeoJSON可能指定为点,圆形或多边形。然而多边形必须形成一个
 
 ## 19.7. Collections (集合)
 
-如果使用的是Elasticsearch然后你可以索引属性通过SET和LIST Cardinality(基数)。例如:
+如果使用的是Elasticsearch,你可以索引属性通过SET和LIST Cardinality(基数)。例如:
 
 ```shell
 mgmt = graph.openManagement()
