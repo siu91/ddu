@@ -1,2 +1,2 @@
-- [ Chapter 8. 索引获得更好的性能](translation/Chapter 8. Indexing for better Performance.md)
-- [ Chapter 28. 重建索引](translation/Chapter 28. Index Management.md)
+- [ Chapter 8. 索引获得更好的性能（完成40%，未校对）](translation/Chapter 8. Indexing for better Performance.md)
+- [ Chapter 28. 重建索引（完成60%，未校对）](translation/Chapter 28. Index Management.md)
