@@ -1,12 +1,12 @@
 # Table of Contents (目录)
 
-- 19.1. Compare Predicate
-- 19.2. Text Predicate
-- 19.3. Geo Predicate
-- 19.4. Query Examples
-- 19.5. Data Type Support
-- 19.6. Geoshape Data Type
-- 19.7. Collections
+- [19.1. Compare Predicate](#191-compare-predicate-比较谓词)
+- [19.2. Text Predicate](#192-text-predicate-文本谓词)
+- [19.3. Geo Predicate](#193-geo-谓词)
+- [19.4. Query Examples](#194-query-examples-查询示例)
+- [19.5. Data Type Support](#195-data-type-support-支持的数据类型)
+- [19.6. Geoshape Data Type](#196-geoshape-data-type-geoshape-类型)
+- [19.7. Collections](#197-collections-集合)
 
 这个页面列出了所有Titan在全局图搜索和局部遍历支持的比较谓词。
 
