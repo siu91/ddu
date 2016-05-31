@@ -3,6 +3,8 @@
 - [ Chapter 19. 搜索谓词和数据类型（完成100%，未校对）](translation/Chapter 19. Search Predicates and Data Types.md)
 - [ Chapter 20. 索引参数和全文搜索（完成80%，未校对）](translation/Chapter 20. Index Parameters and Full-Text Search.md)
 - [ Chapter 28. 重建索引（完成60%，未校对）](translation/Chapter 28. Index Management.md)
+- [ Chapter 33. Titan数据模型（完成80%，未校对）](translation/Chapter 33. Titan Data Model.md)
+
 
 
 # Titan

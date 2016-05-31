@@ -48,6 +48,23 @@ which can lead to minor differences in how full-text search queries are handled
 字符搜索串谓词(见下文)可以在查询中使用,但这些需要过滤在内存中，开销很大。
 
 ### 20.1.2. String Search (字符搜索)
+To index string properties as character sequences without any analysis or tokenization, specify the mapping as Mapping.STRING:
+```shell
+mgmt = graph.openManagement()
+name = mgmt.makePropertyKey('bookname').dataType(String.class).make()
+mgmt.buildIndex('booksBySummary', Vertex.class).addKey(name, Mapping.STRING.asParameter()).buildMixedIndex("search")
+mgmt.commit()
+```
+When a string mapping is configured, the string value is indexed and can be queried "as-is" - including stop words and non-letter characters. However, in this case the query must match the entire string value. Hence, the string mapping is useful when indexing short character sequences that are considered to be one token.
+
+When a string property is indexed as string, only the following predicates are supported in graph queries by the indexing backend. String search is case-sensitive.
+
+- eq: if the string is identical to the query string
+- neq: if the string is different than the query string
+- textPrefix: if the string value starts with the given query string
+- textRegex: if the string value matches the given regular expression in its entirety
+
+Full-text search predicates may be used in queries, but those require filtering in memory which can be very costly.
 
 ### 20.1.3. Full text and string search
 
@@ -82,3 +99,5 @@ mgmt.commit()
 使用这个字段映射定义为一个参数,泰坦将使用相同的名称字段中创建外部booksBySummary指数指标体系的关键属性。注意,必须保证给定的字段名称索引中是独一无二的。
 
 ### 20.2.2. Global Field Mapping
+
+[原文](http://s3.thinkaurelius.com/docs/titan/1.0.0/index-parameters.html)

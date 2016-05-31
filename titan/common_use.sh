@@ -17,3 +17,12 @@ mgmt.buildIndex('coverages', Vertex.class).addKey(target).addKey(strategy).addKe
 mgmt.commit();
 
 g.V().hasLabel('coursewares').has('lc_enable',true).as('x').select('x').or(and(outE('has_category_code').inV().hasLabel('category_code').has('taxoncode','$F050005'),outE('has_category_code').inV().hasLabel('category_code').has('taxoncode','$RT0100'),outE('has_category_code').inV().hasLabel('category_code').has('taxoncode','$ON030000'))).select('x').or(outE('has_coverage').inV().hasLabel('coverage').has('target_type','Debug').has('target','qa'),outE('has_coverage').inV().hasLabel('coverage').has('target_type','Org').has('target','nd')).select('x').values('identifier')
+
+
+
+
+gremlin> :> mgmt = graph.openManagement();taxoncode = mgmt.getPropertyKey('taxoncode');taxonpath = mgmt.getPropertyKey('taxonpath');mgmt.buildIndex('taxOnCodeAndPath',Vertex.class).addKey(taxoncode).addKey(taxonpath).buildMixedIndex("search");mgmt.commit();
+==>null
+gremlin> :> mgmt = graph.openManagement();taxoncode = mgmt.getPropertyKey('taxoncode');taxonpath = mgmt.getPropertyKey('taxonpath');mgmt.buildIndex('taxOnCodeAndPath1',Vertex.class).addKey(taxoncode).addKey(taxonpath, Mapping.STRING.asParameter()).buildMixedIndex("search");mgmt.commit();
+==>null
+gremlin>

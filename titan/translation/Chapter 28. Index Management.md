@@ -427,3 +427,22 @@ TitanManagement重建索引以单机OLAP的方式，这样很便捷，只要数�
 ```
 
 ### 28.2.3. Executing an Index Removal Job on MapReduce (MapReduce移除索引)
+
+```
+As with reindexing, the recommended way to generate and run an index removal job on MapReduce is through the MapReduceIndexManagement class. Here is a rough outline of the steps to run an index removal job using this class:
+
+Open a TitanGraph instance
+If the index has not yet been disabled, disable it through TitanManagement
+Pass the graph instance into MapReduceIndexManagement's constructor
+Call updateIndex(<index>, SchemaAction.REMOVE_INDEX)
+A commented code example follows in the next subsection.
+```
+```
+与改变符号,生成并运行一个索引的推荐方法去除工作MapReduce是通过MapReduceIndexManagement类。这是一个粗略的轮廓的步骤运行索引删除工作使用这个类:
+打开一个TitanGraph实例
+如果该指数还没有残疾,通过TitanManagement禁用它
+通过图实例MapReduceIndexManagement的构造函数
+调用updateIndex(<指数>、SchemaAction.REMOVE_INDEX)
+一个注释代码示例遵循下一小节。
+
+```
